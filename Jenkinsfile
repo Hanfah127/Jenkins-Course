@@ -23,6 +23,9 @@ pipeline {
                 dir("simple-java-maven-app") {
                     sh "mvn test"
                 }
+                stage('Complete') {
+                    steps {
+                        echo 'Job Complete!'
             }
         }
     }
